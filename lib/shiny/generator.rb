@@ -5,3 +5,9 @@ module Shiny
     # Your code goes here...
   end
 end
+
+
+if __FILE__ == $0
+    foo()
+    bar()
+end
