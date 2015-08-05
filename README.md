@@ -20,6 +20,11 @@ Or install it yourself as:
 
 ```ruby
 require 'shiny/generator'
+
+s = Shiny::Generator::Template.new
+s.create
+
+`R -e "shiny::runApp('shiny')"`
 ```
 
 ## Development
