@@ -1,5 +1,6 @@
 require "shiny/generator/version"
 require "shiny/generator/scraper"
+require "shiny/generator/template"
 
 module Shiny
   module Generator

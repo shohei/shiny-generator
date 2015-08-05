@@ -1,19 +1,13 @@
 require 'rubygems'
-require 'opal'
-require 'opal-jquery'
+require 'nokogiri'
+require 'open-uri'
 
 $:.unshift File.expand_path("./lib"), File.dirname(__FILE__)
 
 require 'shiny/generator'
-include Shiny::Generator
 
-s = Scraper.new
+s = Shiny::Generator::Template.new
+s.create
 
-
-
-
-HTTP.get("https://itunes.apple.com/search?term=jack+johnson") do |response|
-  puts response.body
-  # => "{\"name\": \"Adam Beynon\"}"
-end
+`R -e "shiny::runApp('shiny')"`
 

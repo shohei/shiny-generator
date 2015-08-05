@@ -6,9 +6,6 @@ module Shiny
         puts "hello world"
       end
 
-      def 
-        
-      end
     end
   end
 end
