@@ -6,8 +6,3 @@ module Shiny
   end
 end
 
-
-if __FILE__ == $0
-    foo()
-    bar()
-end
